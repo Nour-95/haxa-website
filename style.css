@@ -1,0 +1,299 @@
+body {
+    margin: 30px;
+    font-family: 'Creepster', cursive;
+    background-color: #111;
+    color: #f4f4f4;
+  }
+  
+  header {
+    margin: 30px;
+    background-color: #000;
+    color: orange;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw; /* Makes the section span the full width of the viewport */
+    margin-left: calc(-50vw + 50%); /* Removes any side margins */
+    position: relative; /* Ensures proper alignment */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Creepster', cursive;
+    padding: 1rem 2rem;
+
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    margin-right: auto;
+  }
+  
+  nav a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+
+  #home {
+    background-image: url('Photos/1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw; /* Makes the section span the full width of the viewport */
+    margin-left: calc(-50vw + 50%); /* Removes any side margins */
+    position: relative; /* Ensures proper alignment */
+    text-align: center;
+    /*padding: 5rem 2rem;*/
+    color: rgb(255, 165, 0);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: hsl(39, 100%, 50%);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+  .p1 {
+    margin-bottom: 40px;
+  }
+
+  .activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  
+  .activity {
+    background-color: #222;
+    padding: 1rem;
+    border: 1px solid #444;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 300px;
+  }
+  .activity img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  #booking {
+    background-image: url('Photos/11.jpg');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    width: 100vw; /* Makes the section span the full width of the viewport */
+    margin-left: calc(-50vw + 50%); /* Removes any side margins */
+    position: relative; /* Ensures proper alignment */
+    /*padding: 40px 20px;*/
+  }
+  
+  form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+  }
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+  form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #about img {
+    width: 45%;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    margin: 30px;
+    font-size: 2.0rem;
+    color: orange;
+  }
+  
+  header a {
+    margin: 30px;
+    color: #ccc;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .gallery-page {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .gallery-card {
+    position: relative;
+    max-width: 600px;
+    margin-bottom: 1rem;
+  }
+  
+  .gallery-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.4);
+  }
+  
+  .gallery-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .gallery-controls button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: orange;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  
+  .description {
+    max-width: 900px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    /*background-color: #1c1c1c;*/
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+  }
+  
+  .description h2 {
+    color: orange;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .description p {
+    font-size: 0.9rem;
+  }
+  .galleryheader {
+    color: orange;
+    display: block;
+    align-items: center;
+  }
+  .galleryheader h1 {
+    text-align: center; /* Centers the text horizontally */
+    margin: 0 auto; /* Ensures proper centering */
+    font-size: 1.8rem;
+}
+  .home-button {
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    top: 40px; /* Adjust the vertical position */
+    right: 40px; /* Adjust the horizontal position */
+    background-color: #ffa500; /* Add a background color */
+    color: black; /* Text color */
+    padding: 10px 15px; /* Add padding for better appearance */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add rounded corners */
+    font-weight: bold; /* Make the text bold */
+    font-family: 'Creepster', cursive;
+  }
+
+    .modal {
+        display: none; /* 🔥 This hides the modal by default */
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 5vh;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%); /* Shift it to center and slightly higher */
+    background-color: rgb(255, 165, 0);
+    border-radius: 10px;
+    width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 500px;
+    max-height: 70vh;
+    overflow-y: auto;
+    text-align: left;
+    color: #000;
+  }
+
+  .close-button {
+    color: #080706;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close-button:hover,
+  .close-button:focus {
+    color: ffa500;
+    text-decoration: none;
+  }
+  
+  #activities a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+    font-weight: normal; /* Match the weight of the surrounding text */
+}
+
+#activities a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover for better UX */
+    color: orange; /* Optional: Change color on hover */
+}
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: orange;
+    margin-top: 40px;
+  }
