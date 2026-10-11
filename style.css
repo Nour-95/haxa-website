@@ -297,3 +297,55 @@ body {
     color: orange;
     margin-top: 40px;
   }
+/* Portfolio release: responsive layout and accessibility fixes */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; overflow-x: clip; line-height: 1.55; }
+header { margin: 0; width: 100%; margin-left: 0; padding: .4rem 1.5rem; gap: 1rem; }
+nav ul { margin: 0; padding: .75rem 0; flex-wrap: wrap; justify-content: center; }
+header a { margin: 0; font-size: 1rem; }
+#home, #booking { width: 100%; margin-left: 0; }
+#home { min-height: 430px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5rem 1.5rem; }
+#home p { max-width: 650px; }
+.activity { min-width: min(100%, 250px); }
+.activity img { display: block; aspect-ratio: 4 / 3; object-fit: cover; }
+form input, form select { box-sizing: border-box; font: inherit; }
+button, input, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #ffba36; outline-offset: 3px; }
+.prototype-note { background: rgba(0,0,0,.82); border-left: 3px solid orange; padding: .75rem 1rem; max-width: 580px; margin: 1rem auto; }
+.booking-feedback { color: #fff; font-weight: bold; }
+.cta-button { border: 0; cursor: pointer; font-size: 1rem; }
+.modal[hidden], [hidden] { display: none !important; }
+.modal { align-items: center; padding: 1rem; overflow: auto; }
+.modal-content { position: relative; top: auto; left: auto; transform: none; max-height: min(85vh, 750px); width: min(100%, 600px); padding: 1.5rem; font-family: Arial, sans-serif; }
+.modal-content h2, .modal-content h3 { padding-right: 2rem; }
+.modal-content li { margin-bottom: .6rem; }
+.modal-content .prototype-note { background: rgba(0,0,0,.12); }
+.close-button { position: absolute; top: .4rem; right: .75rem; border: 0; background: transparent; padding: .15rem .5rem; }
+.close-button:hover, .close-button:focus-visible { color: #613200; }
+body.modal-open { overflow: hidden; }
+.galleryheader { min-height: 85px; display: flex; align-items: center; justify-content: center; padding: 1rem; position: relative; }
+.galleryheader h1 { margin: 0; padding: 0 5rem; }
+.home-button { top: 50%; right: 1rem; transform: translateY(-50%); }
+.gallery-page { margin: 0 auto; padding: 1.5rem; max-width: 1100px; }
+.gallery, .gallery-card { width: 100%; }
+.gallery-card { margin-inline: auto; }
+.gallery-controls button { min-height: 44px; min-width: 44px; }
+.description { width: 100%; }
+@media (max-width: 650px) {
+  header { flex-direction: column; padding: .75rem; gap: .2rem; }
+  .logo { padding: .3rem; font-size: 1.5rem; }
+  nav ul { gap: .6rem 1rem; }
+  section { padding: 1.5rem 1rem; }
+  #home { min-height: 360px; padding: 3.5rem 1.25rem; }
+  .cta-button { margin-top: 1.2rem; }
+  .activity-list { padding: .5rem 0; }
+  .activity { max-width: 100%; }
+  .galleryheader { padding: 1rem; flex-direction: column; gap: .8rem; }
+  .galleryheader h1 { padding: 0; font-size: 1.45rem; }
+  .home-button { position: static; transform: none; }
+  .gallery-page { padding: 1rem; }
+  .modal-content { padding: 1.1rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

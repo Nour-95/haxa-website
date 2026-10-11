@@ -22,39 +22,22 @@
   <section id="home">
     <h1>Escape the Forest</h1>
     <p>Immerse yourself in a horror experience like no other. Solve the puzzles, survive the forest, escape the legend.</p>
-    <a href="#" class="cta-button">Discover Now</a>
+    <button type="button" class="cta-button" aria-haspopup="dialog" aria-controls="modal">Discover Now</button>
   </section>
-  <div id="modal" class="modal">
-    <div class="modal-content">
-        <p> Game Zones:
-            he forest is divided into several “stations” or themed zones. Each zone represents a part of the story and contains puzzles or props.
-            
-            Trail Map or Guided Path: Participants follow a predefined path, sometimes with a map or guided by an actor/performer.
-            Live Actors: Actors play roles such as witches, lost villagers, cursed spirits, or ritual leaders. They may interact, spook, or even help players.
-            
-            Clues & Props:  
-    
-            Hidden inside tree hollows, under fake rocks, or hanging from branches in sealed scrolls.
-            Found through UV light, sound cues, or coded messages burned into bark or etched into stone.
-            Ritual sites with bones, candles, books, etc. that hint at the next move.
-            
-            
-            Tools Provided: 
-    
-            Lanterns, walkie-talkies, maps, or magical talismans.
-            
-            Time Limit:
-            60–90 minutes, tracked via actor or device.
-            
-            
-            Safety and Control:
-    
-            Staff/actors follow from a distance and intervene only when needed.
-            Emergency exits and communication tools are part of the safety system.
-            Paths are cleared, but look wild.
-            </p>
-      <span class="close-button">&times;</span>
-      
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-content" tabindex="-1">
+      <button type="button" class="close-button" aria-label="Close experience details">&times;</button>
+      <h2 id="modal-title">Explore HAXA's haunted forest</h2>
+      <p>Follow a story-driven trail through themed zones, solving puzzles and discovering clues along the way.</p>
+      <h3>What to expect</h3>
+      <ul>
+        <li><strong>Immersive zones:</strong> atmospheric forest locations, puzzles and theatrical props.</li>
+        <li><strong>Interactive storytelling:</strong> performers portraying witches, villagers and cursed spirits.</li>
+        <li><strong>Clues and tools:</strong> maps, coded messages and lanterns to guide your adventure.</li>
+        <li><strong>Time limit:</strong> approximately 60–90 minutes in the fictional experience concept.</li>
+        <li><strong>Safety concept:</strong> planned staff oversight and designated exit routes.</li>
+      </ul>
+      <p class="prototype-note">HAXA is a fictional academic concept, not an operating escape-game business.</p>
     </div>
   </div>
   <section id="activities">
@@ -66,12 +49,12 @@
         <p>A classic Blair Witch-inspired trail through the haunted woods with hidden clues and creepy encounters.</p>
       </div>
       <div class="activity">
-        <img src="Photos/4.jpg">
+        <img src="Photos/4.jpg" alt="The Ritual horror escape experience">
         <h3><a href="ritual.html">The Ritual</a></h3>
         <p>Uncover ancient rites in the forest. You’ll need more than logic to survive.</p>
       </div>
       <div class="activity">
-        <img src="Photos/7.jpg">
+        <img src="Photos/7.jpg" alt="Forest of Shadows escape experience">
         <h3><a href="forest-shadows.html">Forest of Shadows</a></h3>
         <p>Face illusions, twisted trees, and the unknown as night falls.</p>
       </div>
@@ -80,6 +63,7 @@
 
   <section id="booking">
     <h2>Book Your Adventure</h2>
+    <p class="prototype-note">Demo only — this form does not create or send reservations. Please use fictional information.</p>
     <form id="booking-form">
       <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" required>
@@ -105,7 +89,8 @@
       <label for="date">Preferred Date:</label>
       <input type="date" id="date" name="date" required>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Try demo booking</button>
+      <p id="booking-feedback" class="booking-feedback" role="status" aria-live="polite" hidden></p>
     </form>
   </section>
 
@@ -116,8 +101,9 @@
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@haxa-escape.com</p>
-    <p>Phone: +33 6 00 00 00 00</p>
+    <p class="prototype-note">Fictional contact information for this academic prototype; no services are offered.</p>
+    <p>Email: contact@haxa-escape.com (fictional)</p>
+    <p>Phone: +33 6 00 00 00 00 (fictional)</p>
     <p>Address: La Forêt Maudite, Alsace</p>
   </section>
 
