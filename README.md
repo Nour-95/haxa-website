@@ -45,7 +45,7 @@ The booking form simulates a reservation submission using JavaScript. It does no
 
 ## Live Demo
 
-[View the HAXA Website](https://YOUR-USERNAME.github.io/haxa-website/)
+[View the HAXA Website](https://nour-95.github.io/haxa-website/)
 
 ## Author
 
